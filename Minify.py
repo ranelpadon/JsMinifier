@@ -25,7 +25,7 @@ class BaseMinifier(sublime_plugin.TextCommand):
             thread = CompilerCall(
                         sel,
                         selbody,
-                        timeout=5,
+                        timeout=30,
                         level=self.settings.get('optimization_level', "WHITESPACE_ONLY"),
                         rm_new_lines=self.settings.get('remove_new_lines', False))
 
